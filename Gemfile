@@ -31,6 +31,19 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#Mis gemas
+#Autentificacion de usuarios
+gem 'devise', github:'plataformatec/devise'
+#Autentificacion con facebook
+gem 'omniauth-facebook'
+#Annotate para recordar los campos en las tablas de los modelos
+gem 'annotate'
+#Hacer slug a los modelos
+gem 'friendly_id', '~> 5.1.0'
+#Maquinas de estados AASM
+gem 'aasm', '~> 4.11'
+#PaperClip para subir imagenes
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
