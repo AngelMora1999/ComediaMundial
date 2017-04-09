@@ -208,7 +208,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aasm (~> 4.11)
+  aasm (~> 4.11, >= 4.11.1)
   annotate
   byebug
   coffee-rails (~> 4.2)
