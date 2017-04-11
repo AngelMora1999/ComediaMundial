@@ -44,6 +44,8 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'aasm', '~> 4.11', '>= 4.11.1'
 #PaperClip para subir imagenes
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
+#BestInPlace para editar remotamente los inputs
+gem 'best_in_place', '~> 3.0.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -9,6 +9,7 @@ class UsuariosController < ApplicationController
 		respond_to do |format|
 			if @user.update(user_params)
 				format.html{ redirect_to @user, notice: "Si se guardo todo ok" }
+				format.json{ render :show }
 			else
 				format.html{ redirect_to @user, notice:@user.errors.full_messages }
 			end
