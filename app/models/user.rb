@@ -32,6 +32,10 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
+
+  #Validaciones de Paperclip
+  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "http://www.ciiecca.org.ar/wp-content/themes/openmind/img/no_image.png"
+  validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
   
   #Mandar a llamar a permisions level
   include PermissionsConcern

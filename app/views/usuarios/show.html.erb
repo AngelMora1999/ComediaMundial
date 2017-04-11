@@ -2,10 +2,10 @@
   <span><%= best_in_place_if current_user == @user, @user, :name %></span>
 </div>
 <div>
-  <span><%= @user.email %></span>
+<%= image_tag @user.avatar.url %>
 </div>
 <div>
-  <span><%= @user.provider %></span>
+  <span><%= @user.avatar.url %></span>
 </div>
 <div>
   <span><%= @user.encrypted_password %></span>
