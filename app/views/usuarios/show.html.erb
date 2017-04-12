@@ -1,12 +1,7 @@
 <div>
   <span><%= best_in_place_if current_user == @user, @user, :name %></span>
 </div>
+
 <div>
-<%= image_tag @user.avatar.url %>
-</div>
-<div>
-  <span><%= @user.avatar.url %></span>
-</div>
-<div>
-  <span><%= @user.encrypted_password %></span>
+  <span><%= circle_img @user.avatar.url, 150 %></span>
 </div>

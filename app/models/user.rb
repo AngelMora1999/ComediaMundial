@@ -34,7 +34,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
 
   #Validaciones de Paperclip
-  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "http://www.ciiecca.org.ar/wp-content/themes/openmind/img/no_image.png"
+  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "https://images.vexels.com/media/users/3/135118/isolated/preview/676bf0e9f3c16649cd7f426c6dcd755a-flat-user-sign-with-round-background-by-vexels.png"
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
   
   #Mandar a llamar a permisions level
