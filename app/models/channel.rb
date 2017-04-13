@@ -21,4 +21,8 @@
 
 class Channel < ApplicationRecord
   belongs_to :user
+
+  def update_visit_count
+  	self.update(visit_count: self.visit_count + 1)
+  end
 end
