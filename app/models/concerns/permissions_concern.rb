@@ -5,7 +5,7 @@ module PermissionsConcern
 		self.permission_level >= 1
 	end
 
-	def is_chanel?
+	def is_channel?
 		self.permission_level >= 2
 	end
 

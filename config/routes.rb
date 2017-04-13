@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :channels
   resources :usuarios, as: :users, only: [:show, :update]
 
   devise_for :users, controllers:{
