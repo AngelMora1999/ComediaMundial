@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :videos
   resources :channels
   resources :usuarios, as: :users, only: [:show, :update]
 

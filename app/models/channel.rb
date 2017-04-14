@@ -20,7 +20,9 @@
 #
 
 class Channel < ApplicationRecord
+  #Referencias
   belongs_to :user
+  has_many :videos
 
   def update_visit_count
   	self.update(visit_count: self.visit_count + 1)

@@ -15,5 +15,10 @@
   <%= @channel.visit_count %>
 </p>
 
+<p>
+  <h1>Mis videos:</h1>
+  <%= link_to "#{@channel.videos.first.title}", @channel.videos.first %>
+</p>
+
 <%= link_to 'Edit', edit_channel_path(@channel) %> |
 <%= link_to 'Back', channels_path %>
