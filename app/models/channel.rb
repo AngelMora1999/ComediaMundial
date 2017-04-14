@@ -24,6 +24,9 @@ class Channel < ApplicationRecord
   belongs_to :user
   has_many :videos
 
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   def update_visit_count
   	self.update(visit_count: self.visit_count + 1)
   end
