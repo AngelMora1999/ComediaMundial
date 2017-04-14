@@ -15,4 +15,8 @@
 class Video < ApplicationRecord
   #Referencias
   belongs_to :channel
+
+  def update_visit_count
+  	self.update(visit_count: self.visit_count + 1)
+  end
 end

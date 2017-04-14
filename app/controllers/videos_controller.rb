@@ -12,6 +12,7 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
+    @video.update_visit_count
   end
 
   # GET /videos/new
