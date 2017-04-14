@@ -24,6 +24,7 @@ class Channel < ApplicationRecord
   belongs_to :user
   has_many :videos
 
+  #Mandar a llamar a friendly_id
   extend FriendlyId
   friendly_id :title, use: :slugged
 

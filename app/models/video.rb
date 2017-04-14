@@ -16,6 +16,10 @@ class Video < ApplicationRecord
   #Referencias
   belongs_to :channel
 
+  #Mandar a llamar a friendly_id
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   def update_visit_count
   	self.update(visit_count: self.visit_count + 1)
   end
