@@ -32,8 +32,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :channel_id %>
-    <%= f.text_field :channel_id %>
+    <%= select("video", "channel_id", Channel.all.collect {|p| [ p.title, p.id ] }, {include_blank: 'None'}) %>
   </div>
 
   <div class="actions">
